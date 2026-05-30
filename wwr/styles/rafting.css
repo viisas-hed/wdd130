@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* Primary Colors (The River Foundation) */
+    --primary-color: #0B2545;
+    /* Deep, powerful navy for main headers and navigation */
+    --primary-color-bg: #EEF4F8;
+    /* Crisp, cool off-white for main page backgrounds */
+
+    /* Secondary Colors (The Water Currents) */
+    --secondary-color: #134074;
+    /* Mid-tone slate blue for sub-sections */
+    --secondary-color-transparent: rgba(19, 64, 116, 0.8);
+    --secondary-color-2: #00B4D8;
+    /* Electric, refreshing teal for links */
+
+    /* Accent Colors (High-Visibility Safety Gear) */
+    --accent1-color: #FF5A1F;
+    /* High-visibility safety orange */
+    --accent2-color: #FFC300;
+    /* Vibrant sun yellow for badges, icons, and alerts */
+
+    /* Neutral Text Colors */
+    --text-color-dark: #1E293B;
+    /* Charcoal gray for highly readable body text */
+    --text-color-light: #FFFFFF;
+    /* Pure white text for dark backgrounds */
+    --heading-font: "Times New Roman", "Georgia", serif;
+    --body-font: Arial, Helvetica, sans-serif;
+}
+
+/* img {
+    width: 100%;
+    height: auto;
+} */
+
+body {
+    font-family: var(--body-font);
+    color: var(--text-color-dark);
+}
+
+header,
+main,
+footer {
+    width: 840px;
+    margin: 0 auto;
+}
+
+h1,
+h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+nav,
+article {
+    margin: 16px;
+    padding: 8px;
+}
+
+.socialmedia a {
+    text-decoration: none;
+}
+
+.socialmedia img {
+    width: 40px;
+    height: auto;
+    margin-right: 5px;
+}
+
+.hero {
+    position: relative;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+h1 {
+    position: absolute;
+    top: 10px;
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+    opacity: 0.7;
+    background-color: var(--primary-color-bg);
+}
+
+.hero article img {
+    float: right;
+    height: 90px;
+    width: auto;
+}
+
+article {
+    position: absolute;
+    bottom: 15px;
+    background-color: var(--secondary-color-transparent);
+    color: var(--text-color-light);
+    padding: 5px;
+    text-align: center;
+}
+
+article p {
+    padding-top: 20px;
+}
+
+h2 {
+    text-align: center;
+    color: var(--text-color-light);
+    background-color: var(--primary-color);
+    width: 100%;
+    margin: 20px 0;
+    padding: 4px 0;
+}
+
+section p {
+    margin: 0 20px;
+}
