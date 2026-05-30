@@ -12,17 +12,7 @@
     /* Crisp, cool off-white for main page backgrounds */
 
     /* Secondary Colors (The Water Currents) */
-    --secondary-color: #134074;
-    /* Mid-tone slate blue for sub-sections */
     --secondary-color-transparent: rgba(19, 64, 116, 0.8);
-    --secondary-color-2: #00B4D8;
-    /* Electric, refreshing teal for links */
-
-    /* Accent Colors (High-Visibility Safety Gear) */
-    --accent1-color: #FF5A1F;
-    /* High-visibility safety orange */
-    --accent2-color: #FFC300;
-    /* Vibrant sun yellow for badges, icons, and alerts */
 
     /* Neutral Text Colors */
     --text-color-dark: #1E293B;
@@ -106,7 +96,7 @@ h1 {
     padding-left: 5px;
 }
 
-article {
+.hero article {
     position: absolute;
     bottom: 15px;
     background-color: var(--secondary-color-transparent);
