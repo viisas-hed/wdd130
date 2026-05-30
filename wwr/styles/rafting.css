@@ -33,10 +33,11 @@
     --body-font: Arial, Helvetica, sans-serif;
 }
 
-/* img {
-    width: 100%;
-    height: auto;
-} */
+header img {
+    display: block;
+    width: 130px;
+    height: 120px;
+}
 
 body {
     font-family: var(--body-font);
@@ -56,10 +57,14 @@ h2 {
     color: var(--primary-color);
 }
 
-nav,
 article {
     margin: 16px;
     padding: 8px;
+}
+
+nav {
+    margin: 5px 16px;
+    padding-left: 15px;
 }
 
 .socialmedia a {
