@@ -46,10 +46,11 @@ body {
     color: var(--text-color-dark);
 }
 
+header,
 main,
 footer {
     width: 840px;
-    margin: 0 auto;
+    margin: 15px auto;
 }
 
 h1,
@@ -64,7 +65,7 @@ article {
 }
 
 nav {
-    margin: 10px 16px;
+    margin: 5px 16px;
     padding-left: 15px;
 }
 
