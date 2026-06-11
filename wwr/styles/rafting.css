@@ -28,7 +28,7 @@ header img {
     width: 112px;
     height: 105px;
     padding: 0;
-    margin: 5px 0 0 10px;
+    margin: .6rem;
 }
 
 body {
@@ -43,6 +43,46 @@ footer {
     margin: 15px auto;
 }
 
+header {
+    margin: 1rem auto;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    align-items: center;
+    padding: 0 3rem;
+
+    /* just for layout visualization purposes? */
+    /* background-color: lavender;
+    border: 1px solid black; */
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+}
+
+.navigation li {
+    flex: 1 1 auto;
+    list-style: none;
+    padding: 8px 25px;
+
+    /* just for layout visualization purposes? */
+    /* background-color: #FFFFFF;
+    border: 1px solid black; */
+
+}
+
+.navigation a {
+    display: block;
+    color: var(--primary-color);
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.navigation a:hover {
+    color: tomato;
+    text-decoration: underline;
+}
+
 h1,
 h2 {
     font-family: var(--heading-font);
@@ -54,12 +94,7 @@ article {
     padding: 8px;
 }
 
-nav {
-    margin: 5px 16px;
-    padding-left: 15px;
-}
-
-.socialmedia a {
+a {
     text-decoration: none;
 }
 
@@ -93,7 +128,7 @@ h1 {
     float: right;
     height: 90px;
     width: auto;
-    padding-left: 5px;
+    margin-left: .5rem;
 }
 
 .hero article {
@@ -101,7 +136,7 @@ h1 {
     bottom: 15px;
     background-color: var(--secondary-color-transparent);
     color: var(--text-color-light);
-    padding: 5px;
+    padding: .5rem 1rem;
     text-align: center;
 }
 
@@ -114,8 +149,27 @@ h2 {
     color: var(--text-color-light);
     background-color: var(--primary-color);
     width: 100%;
-    margin: 20px 0;
+    margin: 10px 0;
     padding: 4px 0;
+}
+
+section {
+    margin-top: 10px;
+
+    /* just for layout visualization purposes? */
+    /* background-color: lavender;
+    border: 2px solid black; */
+}
+
+.section-grid-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+}
+
+.section-grid-container img {
+    max-width: 100%;
+    height: auto;
+    grid-column: 2;
 }
 
 section p {
@@ -123,7 +177,37 @@ section p {
     padding: 0 20px 5px;
 }
 
+.adventure-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr 40px;
+
+}
+
+.adventure-container img {
+    max-width: 110px;
+    height: auto;
+    place-self: center;
+}
+
+.adventure-container p {
+    justify-self: center;
+    grid-template-rows: 2/3;
+    margin: .3rem;
+}
+
 footer {
     border-top: 1px solid var(--primary-color);
-    padding-top: 10px;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    place-items: center;
+    padding: 10px 0;
+
+    /* just for layout visualization purposes? */
+    /* background-color: lavender;
+    border: 2px solid black; */
+}
+
+footer p {
+    grid-column: 2;
 }
