@@ -177,23 +177,18 @@ section p {
     padding: 0 20px 5px;
 }
 
-.adventure-container {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: 1fr 40px;
-
+.adventure-flex-container {
+    display: flex;
+    justify-content: space-evenly;
 }
 
-.adventure-container img {
-    max-width: 110px;
-    height: auto;
-    place-self: center;
+figure img {
+    max-height: 80px;
+    max-width: auto;
 }
 
-.adventure-container p {
+figcaption {
     justify-self: center;
-    grid-template-rows: 2/3;
-    margin: .3rem;
 }
 
 footer {
