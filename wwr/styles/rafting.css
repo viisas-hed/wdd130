@@ -5,22 +5,20 @@
 }
 
 :root {
-    /* Primary Colors (The River Foundation) */
     --primary-color: #0B2545;
-    /* Deep, powerful navy for main headers and navigation */
     --primary-color-bg: #EEF4F8;
-    /* Crisp, cool off-white for main page backgrounds */
 
-    /* Secondary Colors (The Water Currents) */
     --secondary-color-transparent: rgba(19, 64, 116, 0.8);
 
-    /* Neutral Text Colors */
     --text-color-dark: #1E293B;
-    /* Charcoal gray for highly readable body text */
     --text-color-light: #FFFFFF;
-    /* Pure white text for dark backgrounds */
+
+    --accent-color: tomato;
+
     --heading-font: "Times New Roman", "Georgia", serif;
     --body-font: Arial, Helvetica, sans-serif;
+
+    --border: 1px solid #1E293B;
 }
 
 header img {
@@ -79,7 +77,7 @@ header {
 }
 
 .navigation a:hover {
-    color: tomato;
+    color: var(--accent-color);
     text-decoration: underline;
 }
 
@@ -95,6 +93,10 @@ article {
 }
 
 a {
+    text-decoration: none;
+}
+
+.socialmedia {
     text-decoration: none;
 }
 
@@ -184,7 +186,7 @@ section p {
 
 figure img {
     max-height: 80px;
-    max-width: auto;
+    width: auto;
 }
 
 figcaption {
@@ -192,7 +194,7 @@ figcaption {
 }
 
 footer {
-    border-top: 1px solid var(--primary-color);
+    border-top: var(--border);
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
     place-items: center;
