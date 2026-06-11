@@ -92,11 +92,8 @@ article {
     padding: 8px;
 }
 
-a {
-    text-decoration: none;
-}
-
-.socialmedia {
+nav a,
+.socialmedia a {
     text-decoration: none;
 }
 
