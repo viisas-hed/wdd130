@@ -1,0 +1,26 @@
+table {
+    border-collapse: collapse;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 8%;
+    border: 2px solid gray;
+    font-size: 0.8rem;
+}
+
+th,
+td {
+    border: 1px solid gray;
+    padding: .5rem .8rem;
+    text-align: center;
+}
+
+thead,
+tfoot {
+    background-color: black;
+    color: white;
+    font-weight: 600;
+
+}
+
+.gray-bg {
+    background-color: #f3f3f3;
+}

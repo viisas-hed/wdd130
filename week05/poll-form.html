@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Poll</title>
+    <link rel="stylesheet" href="styles/poll-form.css">
+</head>
+
+<body>
+    <header>
+        <h1>WDD 130 | HTML Form - User Poll</h1>
+    </header>
+    <main>
+        <form>
+            <fieldset id="contact-section">
+                <legend>Contact Information</legend>
+                <div class="form-item column2"><label for="fullname">Full name:</label>
+                    <input type="text" name="fullname" id="fullname" required>
+                </div>
+                <div class="form-item column2"><label for="useremail">E-mail address:</label>
+                    <input type="email" name="useremail" id="useremail" required>
+                </div>
+
+            </fieldset>
+            <fieldset id="questions-section">
+                <legend>Questions</legend>
+                <div class="form-item column1"><label for="browser">What is your favorite internet
+                        browser?</label>
+                    <select name="browser" id="browser">
+                        <option value="chrome">Chrome</option>
+                        <option value="safari">Safari</option>
+                        <option value="edge">Edge</option>
+                        <option value="brave">Brave</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="form-item column1"><label for="pet">Do you have a household pet?</label>
+                    <input type="checkbox" name="pet" id="pet">
+                </div>
+                <div class="form-item column1 feedback">
+                    <label for="feedback"> List the places you have lived
+                        at:</label>
+                    <textarea name="feedback" id="feedback" rows="3"
+                      placeholder="Salt Lake city, UT; Little Rock, AR"></textarea>
+                </div>
+            </fieldset>
+            <button type="submit">Submit Poll</button>
+        </form>
+    </main>
+    <footer>&copy;2026 | HTML Form - User Poll Activity | Diego Frutos</footer>
+</body>
+
+</html>
