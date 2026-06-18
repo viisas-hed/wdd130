@@ -321,6 +321,6 @@ section .flex-container {
 }
 
 .staff img {
-    max-height: 100px;
+    max-height: 110px;
     width: auto;
 }
