@@ -524,12 +524,20 @@ tfoot a:hover {
     color: var(--accent-color);
 }
 
+.contact-us-section h3 {
+    background-color: unset;
+}
+
 .contact-hl {
+    display: block;
+    justify-self: center;
+    align-content: center;
     background-color: var(--accent-color);
     color: var(--text-color-light);
-    width: 350px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    width: 300px;
+    height: 30px;
+    border-radius: .5rem;
+    margin-bottom: 20px;
     text-decoration: none;
 }
 
@@ -542,6 +550,8 @@ tfoot a:hover {
     margin-top: 15px
 }
 
-.contact-us-section a {
-    /* width: 10px; */
+.contact-us-section p {
+    width: 480px;
+    text-align: center;
+    place-self: center;
 }
