@@ -21,6 +21,15 @@
     --border: 1px solid var(--primary-color);
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+p {
+    color: var(--text-color-dark);
+}
+
 header img {
     display: block;
     width: 112px;
@@ -88,6 +97,10 @@ h2 {
     font-family: var(--heading-font);
     color: var(--primary-color);
     text-align: center;
+}
+
+h1 {
+    font-size: 2.2rem;
 }
 
 article {
@@ -423,19 +436,20 @@ h3 {
 }
 
 .trips-hl {
-    color: var(--accent-color);
-    text-decoration: none;
+    color: var(--text-color-light);
+    text-decoration: underline;
 }
 
 .trips-hl:hover {
-    color: var(--text-color-light);
+    color: var(--accent-color);
+    text-decoration: none;
 }
 
 .explore-hl {
     align-self: top;
     justify-self: center;
     text-decoration: none;
-
+    color: var(--accent-color);
     font-size: 1.5rem;
     font-weight: 600;
     width: fit-content;
@@ -443,7 +457,7 @@ h3 {
 }
 
 .explore-hl:hover {
-    color: var(--accent-color);
+    color: var(--primary-color);
     text-decoration: none;
 
 }
@@ -508,4 +522,26 @@ tfoot a {
 
 tfoot a:hover {
     color: var(--accent-color);
+}
+
+.contact-hl {
+    background-color: var(--accent-color);
+    color: var(--text-color-light);
+    width: 350px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+
+.contact-hl:hover {
+    background-color: var(--primary-color-bg);
+    color: var(--text-color-dark);
+}
+
+.contact-us-section {
+    margin-top: 15px
+}
+
+.contact-us-section a {
+    /* width: 10px; */
 }
