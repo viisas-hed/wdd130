@@ -356,6 +356,28 @@ section .flex-container {
     place-self: center;
 }
 
+.home-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+}
+
+.home-section img {
+    width: 300px;
+
+}
+
+.home-section-left {
+    grid-column: 1/4;
+    display: flex;
+    background-color: ;
+}
+
+.home-section-right {
+    grid-column: 2/5;
+    display: flex;
+}
+
 /* .newsletter-section {
     display: grid;
     grid-template-columns: 1fr 1fr;
