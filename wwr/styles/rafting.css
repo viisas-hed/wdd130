@@ -374,6 +374,7 @@ section .flex-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     text-align: center;
+    border-top: var(--border);
 }
 
 h3 {
@@ -447,13 +448,13 @@ h3 {
 }
 
 .explore-hl {
-    align-self: top;
     justify-self: center;
     text-decoration: none;
     color: var(--accent-color);
     font-size: 1.5rem;
     font-weight: 600;
     width: fit-content;
+    height: fit-content;
     text-decoration: underline;
 }
 
