@@ -362,11 +362,12 @@ section .flex-container {
     text-align: center;
 }
 
-.caja-grande h3 {
+h3 {
     font-size: 1.25rem;
     letter-spacing: 1px;
+    text-align: center;
     justify-self: center;
-    margin: 20px auto;
+    margin: 20px auto 10px;
     height: 30px;
     width: 100%;
     background-color: var(--secondary-color-transparent);
@@ -447,29 +448,64 @@ section .flex-container {
 
 }
 
-/* .cajita1 h3,
-.cajita1 p,
-.cajita2 h3,
-.cajita2 p {
-    grid-column: 2;
-
-    text-align: center;
-} */
-
-/* .home-section {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-}
-
-.home-section img {
+.trips img {
+    width: 50%;
     height: auto;
-    width: 100%;
+    float: left;
 }
 
-.home-section-left {
-    grid-column: 1-3;
+.trips h2 {
+    clear: left;
 }
 
-.home-section-right {
-    grid-column: 2-4;
-} */
+.trip-container {
+    margin: 20px 0 95px;
+}
+
+.trip-container p {
+    margin: 0 auto;
+    padding: 10px 15px 0 435px;
+
+}
+
+.trips-table {
+    border: 2px solid var(--secondary-color-transparent);
+    border-collapse: collapse;
+}
+
+th {
+    color: var(--text-color-dark);
+    font-size: 1.1rem;
+}
+
+thead th,
+tfoot th {
+    background-color: var(--primary-color);
+    color: var(--text-color-light);
+}
+
+.trips-table th,
+.trips-table td {
+    border-left: 2px solid var(--secondary-color-transparent);
+    padding: 3px 5px;
+    text-align: center;
+}
+
+tfoot th {
+    font-weight: 400;
+    border-top: 2px solid var(--secondary-color-transparent);
+}
+
+.trips-table .alt-bg {
+    background-color: var(--primary-color-bg);
+}
+
+tfoot a {
+    color: var(--text-color-light);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+tfoot a:hover {
+    color: var(--accent-color);
+}
